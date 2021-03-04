@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Haulage Hub - Home - Transportation and Logistics Website</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Trucking is transportation and Logistics website">
+    <meta name="author" content="Ibiso Barimalaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Site Style -->
+    <link rel="stylesheet" href="site.css">
+    <link rel="shortcut icon" href="Images/icon.svg" type="image/x-icon">
+
+    <!-- JQuery, Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+    <!-- Info navigation -->
+    <div class="fixed-to">
+        <div class="d-flex justify-content-between info-menu px-5 py-2 small">
+            <ul class="d-flex">
+                <li>
+                    <span class="far fa-clock mr-2"></span> <span class="small">Mon - Fri 09:00-18:00</span>
+                </li>
+                <li>
+                    <a href="tel:+2349090902227"><span class="fa fa-phone mr-2" style="transform: rotate(90deg);"></span> <span class="d-md-inline d-none">+234 90 9090 2227</span></a>
+                </li>
+            </ul>
+            <ul class="d-flex">
+                <li class="">
+                    <a class="" href="mailto:support@thehaulagehub.com"> <span class="fa fa-envelope mr-2"></span> <span class="d-md-inline d-none">support@thehaulagehub.com</span></a>
+                </li>
+                <li class="">
+                    <a class="" href="https://www.facebook.com"><span class="fab fa-facebook-f"></span></a>
+                </li>
+                <li class="">
+                    <a class="" href="https://www.twitter.com"><span class="fab fa-twitter"></span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="position-absolute w-100 px-5 py-3" style="z-index: 1000;">
+            <div class="contaner">
+                <nav class="navbar navbar-expand-sm navbar-dark main-menu main-scroll" style="background: rgba(255, 255, 255, 0);">
+                    <a class="navbar-brand d-md-none d-sm-block" href="/">
+                        <img src="Images/logo.svg" />
+                    </a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <a class="navbar-brand mr-auto d-none d-md-block" href="/">
+                            <img src="Images/logo.svg" />
+                        </a>
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                <span class="underline"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about-us">About Us</a>
+                                <span class="underline"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/how-it-works">How it Works</a>
+                                <span class="underline"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact-us">Contact Us</a>
+                                <span class="underline"></span>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">My Account</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" id="registerLink" href="/Account/Register">Register <span class="underline"></span></a>
+                                    <a class="dropdown-item" href="/Account/Login" id="loginLink">Log In <span class="underline"></span></a>
+                                </div>
+                                <span class="underline"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End main navigation -->
+    <!-- TruckWatch Section Start -->
+    <div id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="truck-watch-header" class="fh">
+                <div class="container d-flex align-items-center justify-content-start h-100 pt-md-0 pt-5" style="color: #fff; overflow-x: auto;">
+                    <div class="flex-fill d-flex">
+                       <div>
+                        <h1 class="wow bounceInDown text-center" style="font-size: 4rem;">TruckWatch Weekly</h1>
+                            <p class="text-center wow bounceInDown" data-wow-delay="0.4s">December 07, 2020 to December 14, 2020</p>
+                            <table id="table-truck-watch" class="table table-responsive-sm table-sm d-flex d-md-block wow fadeInUp" data-wow-delay="0.8s">
+                                <tbody class="d-flex small d-md-table-row small">
+                                    <tr class="d-flex d-md-table-row flex-column font-weight-bold">
+                                        <td class="flex-fill">Route</td>
+                                        <td class="flex-fill">Truck Size</td>
+                                        <td class="flex-fill">No. of Shippers</td>
+                                        <td class="flex-fill">No. of Requests</td>
+                                        <td class="flex-fill">Highest Price Per Truck</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Ebonyi - Owerri</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">7 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">23</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 600,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Enugu - Zaria</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">15 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">12</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 500,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Kano - Sapele</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">10 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">8</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 500,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Jigawa - Calabar</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">30 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">6</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 600,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="text-center col-md-6 col-12">
+                        <h1 class="font-weight-bolder wow bounceInDown text-center" >
+                            <span style="font-size: 1.5rem;">Market Outlook</span>
+                        </h1>
+                        <p class="text-center small wow bounceInDown" data-wow-delay="0.4s">
+                            Harvest season in Northern Nigeria is causing scarcity of trucks. The impact is noticeable in South for a while now.
+                        </p>
+        
+                        <a href="/Home/TruckWatch" class="btn btn-header-outline wow bounceIn" data-wow-delay="0.8s">Learn More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div id="truck-watch-header-2" class="fh">
+                <div class="container d-flex align-items-center justify-content-start h-100 pt-md-0 pt-5" style="color: #fff; overflow-x: auto;">
+                    <div class="flex-fill d-flex">
+                       <div>
+                        <h1 class="wow bounceInDown text-center" style="font-size: 4rem;">TruckWatch Weekly</h1>
+                            <p class="text-center wow bounceInDown" data-wow-delay="0.4s">December 07, 2020 to December 14, 2020</p>
+                            <table id="table-truck-watch" class="table table-responsive-sm table-sm d-flex d-md-block wow fadeInUp" data-wow-delay="0.8s">
+                                <tbody class="d-flex small d-md-table-row small">
+                                    <tr class="d-flex d-md-table-row flex-column font-weight-bold">
+                                        <td class="flex-fill">Route</td>
+                                        <td class="flex-fill">Truck Size</td>
+                                        <td class="flex-fill">No. of Shippers</td>
+                                        <td class="flex-fill">No. of Requests</td>
+                                        <td class="flex-fill">Lowest Price Per Truck</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Ebonyi - Owerri</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">7 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">23</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 600,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Enugu - Zaria</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">15 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">12</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 500,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Kano - Sapele</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">10 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">8</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 500,000.00</td>
+                                    </tr>
+                                    <tr class="table-divider"></tr>
+                                    <tr class="d-flex d-md-table-row flex-column">
+                                        <td class="flex-fill font-weight-bold">Jigawa - Calabar</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">30 Tons</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">1</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">6</td>
+                                        <td class="flex-fill" style="text-align: center; vertical-align: middle;">N 600,000.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="text-center col-md-6 col-12">
+                        <h1 class="font-weight-bolder wow bounceInDown text-center" >
+                            <span style="font-size: 1.5rem;">Market Outlook</span>
+                        </h1>
+                        <p class="text-center small wow bounceInDown" data-wow-delay="0.4s">
+                            Harvest season in Northern Nigeria is causing scarcity of trucks. The impact is noticeable in South for a while now.
+                        </p>
+        
+                        <a href="/Home/TruckWatch" class="btn btn-header-outline wow bounceIn" data-wow-delay="0.8s">Learn More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+          <div style="background: rgba(0,0,0,0.5);
+          padding: 10px;
+          padding-bottom: 5px;">
+            <span class="carousel-control-prev-icon"></span>
+          </div>
+        </a>
+        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+          <div style="background: rgba(0,0,0,0.5);
+          padding: 10px;
+          padding-bottom: 5px;">
+            <span class="carousel-control-next-icon"></span>
+          </div>
+        </a>
+      
+      </div>
+    <!-- TruckWatch Section End -->
+
+    <!-- Up and Down Stats -->
+    <div id="up-down-section">
+        <div class="d-flex container flex-md-row flex-column py-md-0 small">
+            <div class="col-md-3 d-flex justify-content-center align-items-center ud-stats wow fadeInDown" data-wow-delay="0.3s">
+                <div class="row shadow-sm w-100 align-items-center rounded-lg py-2">
+                    <div class="col-4 text-center">
+                        <p class="mb-0">Lagos </p>
+                        <span class="fas fa-arrows-alt-v"></span>
+                        <p class="mb-0">Maiduguri </p>
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"> <small><b>Highest Price</b></small><br />
+                            1,023N</p>
+                            <div><button class="btn btn-success btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" /> 3.12%</button></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"><small><b>No. of Trucks</b></small><br />
+                            234</p>
+                            <div><button class="btn btn-danger btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" style="transform: rotate(180deg);"/></span>1.34%</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center ud-stats wow fadeInDown" data-wow-delay="0.3s">
+                <div class="row shadow-sm w-100 align-items-center rounded-lg py-2">
+                    <div class="col-4 text-center">
+                        <p class="mb-0">Lagos </p>
+                        <span class="fas fa-arrows-alt-v"></span>
+                        <p class="mb-0">Maiduguri </p>
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"> <small><b>Highest Price</b></small><br />
+                            1,023N</p>
+                            <div><button class="btn btn-success btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" /> 3.12%</button></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"><small><b>No. of Trucks</b></small><br />
+                            234</p>
+                            <div><button class="btn btn-danger btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" style="transform: rotate(180deg);"/></span>1.34%</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center ud-stats wow fadeInDown" data-wow-delay="0.3s">
+                <div class="row shadow-sm w-100 align-items-center rounded-lg py-2">
+                    <div class="col-4 text-center">
+                        <p class="mb-0">Lagos </p>
+                        <span class="fas fa-arrows-alt-v"></span>
+                        <p class="mb-0">Maiduguri </p>
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"> <small><b>Highest Price</b></small><br />
+                            1,023N</p>
+                            <div><button class="btn btn-success btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" /> 3.12%</button></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"><small><b>No. of Trucks</b></small><br />
+                            234</p>
+                            <div><button class="btn btn-danger btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" style="transform: rotate(180deg);"/></span>1.34%</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center align-items-center ud-stats wow fadeInDown" data-wow-delay="0.3s">
+                <div class="row shadow-sm w-100 align-items-center rounded-lg py-2">
+                    <div class="col-4 text-center">
+                        <p class="mb-0">Lagos </p>
+                        <span class="fas fa-arrows-alt-v"></span>
+                        <p class="mb-0">Maiduguri </p>
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"> <small><b>Highest Price</b></small><br />
+                            1,023N</p>
+                            <div><button class="btn btn-success btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" /> 3.12%</button></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="mb-0"><small><b>No. of Trucks</b></small><br />
+                            234</p>
+                            <div><button class="btn btn-danger btn-sm d-flex align-items-center p-1"><img src="Images/up-arrow.svg" class="mr-1" style="transform: rotate(180deg);"/></span>1.34%</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Up and Down Stats -->
+    <!-- What to do on Haulage Hub Section -->
+    <div id="help-haulage-hub">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="d-flex flex-column flex-md-row col-md-6 hhh-item-2 p-5">
+                <div class="align-self-start mr-5 mb-3" style="border: 3px solid #fff; border-radius: 50%; padding: 15px 10px">
+                    <img src="Images/truck.svg" alt="truck">
+                </div>
+                <div>
+                    <h4 class="wow fadeInDown" data-wow-delay="0.1s">DO YOU OWN A TRUCK OR VAN?</h4>
+                    <p class="wow fadeInUp small" data-wow-delay="0.4s">Our simple but powerful platform is designed to help you find loads for your truck or van in minutes.</p>
+                    <a href="/account/driver-application" class="btn btn-hub btn-sm wow bounceIn" data-wow-delay="0.8s">Register Now</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row col-md-6 hhh-item-4 p-5">
+                <div class="align-self-start mr-5 mb-3" style="border: 3px solid #fff; border-radius: 50%; padding: 15px">
+                    <img src="Images/magnifying-glass.svg" alt="truck">
+                </div>
+                <div>
+                    <h4 class="wow fadeInDown" data-wow-delay="0.1s">LOOKING FOR A TRUCK OR VAN?</h4>
+                <p class="wow fadeInUp small" data-wow-delay="0.4s">Post your load and our system will locate available drivers
+                    near you in minutes.</p>
+                <a href="/Account/register" class="btn btn-hub btn-sm wow bounceIn" data-wow-delay="0.8s">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- What to do on Haulage Hub Section End -->
+
+    <!-- Need To Know Section -->
+    <div id="need-to-know" class="py-5">
+        <div class="d-flex container flex-column flex-md-row flex-wrap align-items-stretch px-md-5">
+            <div class="d-flex justify-content-between flex-column col-md-6 hhh-item-1 p-5 wow bounceInUp" data-wow-delay="0.1s">
+                <h3>TruckWatch Weekly Intelligence</h3>
+                <p>It helps you to seamlessly compare truck demand pattern on each route for up to 5 companies at the same time, analyze truck demand on each route, see how each season affects truck demand, see what is driving truck demand across regions and predict truck demands and availability for upto 3 months in advance.</p>
+                <a href="" class="align-self-start btn btn-sm btn-odd">1 Month Free Access</a>
+            </div>
+            <div class="d-flex justify-content-between flex-column col-md-6 p-5 hub-light wow bounceInDown" data-wow-delay="0.1s">
+                <h3 class="hub-primary">PriceWatch Intelligence</h3>
+                <p>With PriceWatch analytics, you can compare truck load price on all routes, benchmark price against others shippers, analyze historical prices for each season, compare truckload price for each truck category on all routes. It uses market data and AI to predict truckload price for each season, predict how truck demand and availability affect price in each region.</p>
+                <a href="" class="align-self-start btn btn-sm btn-even">1 Month Free Access</a>
+            </div>
+            <div class="d-flex justify-content-between flex-column col-md-6 p-5 hub-light wow bounceInDown" data-wow-delay="0.1s">
+                <h3 class="hub-primary">Truck Investment ROI Tracker</h3>
+                <p>Use real-time and historical data to calculate ROI before investing or funding truck. You can also develop models for truck load price on each route and visualize events that will impact your investment so you can make informed decision either as a truck owner or a funding partner.</p>
+                <a href="" class="align-self-start btn btn-sm btn-even">1 Month Free Access</a>
+            </div>
+            <div class="d-flex justify-content-between flex-column col-md-6 hhh-item-3 p-5 wow bounceInUp" data-wow-delay="0.1s">
+                <h3>Route Watch Intelligence</h3>
+                <p>Lane analytics helps you stay ahead with current and historical data-driven market analytics. It gives insight on routes with high truck demand and predicts where demand will likely move to in the next 6months. Our propriatery algorithm helps you see the most profitable routes based on price, delivery lead time, reverse logistics, road condition and expected revenue generated by each truck category on each route.</p>
+                <a href="" class="align-self-start btn btn-sm btn-odd">1 Month Free Access</a>
+            </div>
+        </div>
+
+        <div class="d-flex container justify-content-center flex-column text-center pt-5 px-md-5 w-75">
+            <h2 class="wow fadeInDown hub-primary" data-wow-delay="0.1s">The Haulage Hub Promise</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                    We promise to provide innovative load-matching platform that helps you run a profitable
+                    logistics business and take care of all your supply chain management to ensure that your
+                    shipments arrive safe, on time and within budget.
+                </p>
+        </div>
+    </div>
+    <!-- Need To Know Section End -->
+    <!-- .page-content end -->
+    <div id="partners-section">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center"
+                style="height: 75vh;overflow:hidden">
+                <h2 class="wow fadeInDown text-center" data-wow-delay="0.1s">Partners & Clients</h2>
+                <div id="demo" class="owl-carousel owl-carousel-navigation wow zoomIn" data-wow-delay="0.4s">
+                    <div>
+                        <img src="Images/viju-LOGO.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="Images/ng-uacn-logo.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="Images/fmn-logo.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container end -->
+    </div>
+    <!-- .page-content end -->
+
+    <div id="footer-section" class="footer-dark">
+        <footer id="footer" class="py-5 px-sm-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="col-md-3 footer-widget-container">
+                        <li class="widget widget-text">
+                            <p class="small">
+                                Nec sagittis aliquam malesuada bibendum. Duis at tellus at urna condimentum mattis pellentesque. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Bibendum neque egestas congue quisque.Nec sagittis aliquam malesuada bibendum. Duis at tellus at urna condimentum mattis pellentesque. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Bibendum neque egestas congue quisque.
+                            </p>
+                        </li>
+                        <li class="widget widget-text">
+                            <a href="https://facebook.com" class="fab fa-facebook-f btn"></a>
+                            <a href="https://twitter.com" class="fab fa-twitter btn"></a>
+                        </li>
+                    </ul>
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container">
+                        <li class="widget widget-text">
+                            <div class="title">
+                                <h3>Contact Us</h3>
+                            </div>
+
+                            <p class="small">
+                                <span class="hub-secondary">Phone: </span>
+                                <a href="tel:+234 9090902227">+234 9090902227</a>
+                            </p>
+
+                            <p class="small">
+                                <span class="hub-secondary">Email: </span>
+                                <a href="mailto: support@thehaulagehub.com">support@thehaulagehub.com</a>
+                            </p>
+                            <address class="small">
+                                <span class="hub-secondary">Address: </span>
+                                10, Awoniyi Elemo Street
+                                Off Osolo way
+                                Ajao Estate - Lagos
+                            </address>
+                        </li><!-- .widget.widget-text end -->
+                    </ul><!-- .col-md-3.footer-widget-container end -->
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container">
+                        <!-- .widget-pages start -->
+                        <li class="widget widget_pages">
+                            <div class="title">
+                                <h3>Quicklinks</h3>
+                            </div>
+
+                            <ul class="small">
+                                <li id="footer-menu-id-2"> <a href="/"> Home</a> </li>
+                                <li id="footer-menu-id-3"> <a href="/about-us"> About Us</a> </li>
+                                <li id="footer-menu-id-4"> <a href="/how-it-works"> How it Works</a> </li>
+                                <li id="footer-menu-id-6"> <a href="/contact-us"> Contact Us</a> </li>
+                                <li id="footer-menu-id-999"> <a href="/terms-and-conditions">Terms and Conditions </a>
+                                </li>
+                            </ul>
+                        </li><!-- .widget-pages end -->
+                    </ul><!-- .col-md-3.footer-widget-container end -->
+
+                    <ul class="col-md-3 col-sm-6 footer-widget-container clearfix">
+                        <!-- .widget.widget_text -->
+                        <li class="widget widget_newsletterwidget">
+                            <div class="title">
+                                <h3>Newsletter</h3>
+                            </div>
+
+                            <p class="small">
+                                Subscribe to our newsletter and we will
+                                inform you about newest projects and promotions.
+                            </p>
+
+                            <br />
+                            <form class="hub-form">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control"  placeholder="Your email..." required>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn" style="padding: 5px 13px 5px 8px;"><i class="fa fa-paper-plane"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li><!-- .widget.widget_newsletterwidget end -->
+                    </ul><!-- .col-md-3.footer-widget-container end -->
+
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </footer><!-- #footer end -->
+
+        <div class="copyright-container small" style="border-top: 1px solid #fff;">
+            <div class="container-fluid py-3 px-sm-5">
+                <div class="d-flex justify-content-between align-items-center flex-md-row">
+                    <div class="col-md-6">
+                        <p class="mb-0 small">The Haulage Hub <span class="date-now"></span>. All RIGHTS RESERVED.</p>
+                    </div><!-- .col-md-6 end -->
+
+                    <div class="col-md-6">
+                        <p class="text-md-right mb-0 small">DESIGNED AND DEVELOPED BY <a target="_blank" href="http://steadsmart.com" style="color: #fff;">STEADSMART STUDIO.</a> </p>
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+            </div><!-- .container end -->
+        </div><!-- .copyright-container end -->
+    </div>
+    <!-- #footer-wrapper end -->
+    <div id="scroll-top" class="shadow"><span class="fa fa-angle-up"></span></div>
+
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.date-now').text(new Date().getFullYear())
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                center: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: false,
+                    }
+                }
+            });
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                $("#scroll-top").css({"display": "block", "width": "auto"});
+            }
+
+            $(window).on("scroll", function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    $("#scroll-top").css({"display": "block", "width": "auto"});
+                }
+                else {
+                    $("#scroll-top").css({"display": "none", "width": "0%"});
+                }
+            });
+
+            $("#scroll-top").on("click", function() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+
+            $(".se-pre-con").delay(500).fadeOut("slow");
+
+            $(".main-menu .navbar-toggler").on("click", function() {
+                $(this).find("i").toggleClass("animate-i").toggleClass("fa-stream fa-times");
+            });
+        });
+    </script>
+</body>
+
+</html>
